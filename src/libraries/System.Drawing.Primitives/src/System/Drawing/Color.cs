@@ -598,7 +598,7 @@ namespace System.Drawing
             if (name != null && !IsKnownColor)
                 return name.GetHashCode();
 
-            return HashCode.Combine(value.GetHashCode(), state.GetHashCode(), knownColor.GetHashCode());
+            return HashCode.Combine(value, state, knownColor);
         }
     }
 }

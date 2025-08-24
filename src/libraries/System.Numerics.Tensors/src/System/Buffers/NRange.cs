@@ -56,7 +56,7 @@ namespace System.Buffers
         /// <summary>Returns the hash code for this instance.</summary>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Start.GetHashCode(), End.GetHashCode());
+            return HashCode.Combine(Start, End);
         }
 
         /// <summary>Converts the value of the current NRange object to its equivalent string representation.</summary>
